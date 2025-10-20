@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
+  },
+  {
+    "id": 2,
+    "title": "Tiny Tools, Big Impact",
+    "excerpt": "Why small side projects keep me sharp.",
+    "count": 24,
+    "image": "MemoryGame.png",
+    "link": "https://sanderalex1.github.io/MemoryGame/"
+  }
+]
