@@ -4,7 +4,7 @@
     "title": "Building a Better Portfolio",
     "excerpt": "Thoughts on design systems and personal branding.",
     "count": 61,
-    "image": "BookFinder.png",
+    "image": "/Portfolio/BookFinder.png",
     "link": "sanderalex1.github.io/BookFinder/"
   },
   {
@@ -12,7 +12,55 @@
     "title": "Tiny Tools, Big Impact",
     "excerpt": "Why small side projects keep me sharp.",
     "count": 24,
-    "image": "MemoryGame.png",
+    "image": "/Portfolio/MemoryGame.png",
     "link": "https://sanderalex1.github.io/MemoryGame/"
+  },
+  {
+    "id": 3,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "/Portfolio/BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
+  },
+  {
+    "id": 4,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "/Portfolio/BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
+  },
+  {
+    "id": 5,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "/Portfolio/BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
+  },
+  {
+    "id": 6,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "/Portfolio/BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
+  },
+  {
+    "id": 7,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "/Portfolio/BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
+  },
+  {
+    "id": 8,
+    "title": "Building a Better Portfolio",
+    "excerpt": "Thoughts on design systems and personal branding.",
+    "count": 61,
+    "image": "/Portfolio/BookFinder.png",
+    "link": "sanderalex1.github.io/BookFinder/"
   }
 ]

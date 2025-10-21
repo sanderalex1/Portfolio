@@ -1,0 +1,81 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically center items */
+  padding: 0 1rem;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center; /* vertical center */
+  gap: 1rem; /* space between items */
+}
+
+.navLeft img {
+  border-radius: 50%;
+  width: 3.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navLeft a {
+  margin: 0;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.navLeft a:hover {
+  color: rgb(223, 2, 2);
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between items */
+}
+
+.navRight a {
+  position: relative;
+}
+
+.navRight a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background-color: #ff4d4d;
+  transition: width 0.3s ease;
+}
+
+.navRight a:hover::after {
+  width: 50%;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e2e2e2;
+}
+
+.navRight img {
+  border-radius: 50%; /* makes it circular */
+  width: 1.8rem;
+  height: 1.8rem; /* make height equal to width */
+  object-fit: cover; /* ensures the image fills the circle nicely */
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,9 @@
+.sectionGrid {
+  margin-top: 2rem;
+  display: grid;
+  /* Use auto-fit or auto-fill for responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  /* Optional: spacing inside the section */
+  padding: 1rem;
+}
