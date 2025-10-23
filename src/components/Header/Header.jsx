@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,7 +13,7 @@ function Header() {
           </a>
         </div>
         <div className={`${styles.navRight} roboto`}>
-          <a href="#">Home</a> <a href="#">Writing</a> <a href="#">Notes</a>
+          <a href="#">Home </a> <a href="#">Works</a>
           <a href="#">About</a>{" "}
           <button>
             <img src="/Portfolio/paint.png" alt="Paint icon" />

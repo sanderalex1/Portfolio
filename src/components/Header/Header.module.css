@@ -55,8 +55,9 @@
 }
 
 button {
-  width: 60px;
-  height: 60px;
+  padding: 0;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   background-color: #f9f9f9;
   border: none;

@@ -1,7 +1,7 @@
 .art {
   position: relative;
-  width: 264px;
-  height: 300px;
+  width: 14dvw;
+  height: 35dvh;
   border-radius: 25px;
   background: #83c5be;
   box-shadow: 20px 20px 60px #b3d7e1;
@@ -10,7 +10,7 @@
   cursor: pointer;
   color: white;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0.3dvw;
   transition: transform 0.3s ease;
   background-repeat: no-repeat;
   background-size: cover;
