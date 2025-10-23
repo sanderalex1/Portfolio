@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
+  const navLinks = ["home", "about", "works"];
+
   return (
     <header style={{ padding: "1rem 2rem" }}>
       <nav className={styles.navBar}>
@@ -13,8 +15,15 @@ function Header() {
           </a>
         </div>
         <div className={`${styles.navRight} roboto`}>
-          <a href="#">Home </a> <a href="#">Works</a>
-          <a href="#">About</a>{" "}
+          {navLinks.map((link) => (
+            <NavLink
+              key={link}
+              to={`/Portfolio/${link}`}
+              className={({ isActive }) => (isActive ? styles.active : null)}
+            >
+              {link.charAt(0).toUpperCase() + link.slice(1)}
+            </NavLink>
+          ))}
           <button>
             <img src="/Portfolio/paint.png" alt="Paint icon" />
           </button>
