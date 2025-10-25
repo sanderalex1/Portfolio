@@ -1,3 +1,8 @@
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -22,10 +27,11 @@
   margin: 0;
   padding: 10px;
   font-weight: 600;
+  color: var(--accent);
 }
 
 .navLeft a:hover {
-  color: rgb(223, 2, 2);
+  color: var(--secondaryAccent);
 }
 
 .navRight {
@@ -46,24 +52,24 @@
   transform: translateX(-50%);
   width: 0;
   height: 5px;
-  background-color: #ff4d4d;
+  background-color: var(--secondaryAccent);
   transition: width 0.3s ease;
 }
 
 .navRight a:hover::after {
-  width: 30%;
+  width: 100%;
 }
 
 .navRight a.active::after {
-  width: 30%;
+  width: 100%;
 }
 
-button {
+.themeButton {
   padding: 0;
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  background-color: #f9f9f9;
+  background-color: var(--bg);
   border: none;
   display: flex;
   justify-content: center;
@@ -72,8 +78,8 @@ button {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-button:hover {
-  background-color: #e2e2e2;
+.themeButton:hover {
+  background-color: var(--secondaryBg);
 }
 
 .navRight img {

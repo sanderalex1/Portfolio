@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 
 function Home() {
   return (
-    <>
+    <div className="container">
       <div className={`${styles.heroTitle}`}>
         <a href="#" className="roboto" style={{ textTransform: "uppercase" }}>
           hello, my name is alex
@@ -21,7 +21,7 @@ function Home() {
         </h2>
         <PostList />
       </section>
-    </>
+    </div>
   );
 }
 

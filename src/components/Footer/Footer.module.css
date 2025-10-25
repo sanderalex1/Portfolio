@@ -1,17 +1,13 @@
 .footer {
   border-top: 2px solid rgba(0, 0, 0, 0.077);
-  padding: 0;
-  width: 98vw;
-  margin-left: calc(-10dvw);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .leftSection {
   display: flex;
   flex-direction: row;
-  padding: 0;
   justify-content: start;
-  padding-left: 17dvw;
-  padding-right: 3.5dvw;
   text-align: left;
   gap: 6em;
 }
@@ -31,7 +27,7 @@
 
 .sideImg {
   display: flex;
-  margin-left: 12dvw;
+  margin-left: auto;
 }
 .sideImg img {
   height: 5dvh;

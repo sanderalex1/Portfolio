@@ -1,7 +1,48 @@
 :root {
-  --bg: #fff;
-  --text: #111;
-  --accent: #0066ff;
-  --card-bg: #f9f9f9;
-  --transition: 0.2s ease;
+  --transition: 0.5s ease;
+}
+
+[data-theme="light"] {
+  --bg: #f8f9fa;
+  --secondaryBg: #e2e2e2;
+  --text: #1c1c1c;
+  --secondaryText: #373a3c;
+  --accent: #2f80ed; /* blue accent */
+  --secondaryAccent: #ff6b6b; /* subtle contrast red/pink */
+}
+
+[data-theme="dark"] {
+  --bg: #0a0f0d;
+  --secondaryBg: #121212;
+  --text: #e0e0e0;
+  --secondaryText: #b3b3b3;
+  --accent: #00ffc6; /* neon mint */
+  --secondaryAccent: #00bfff; /* electric blue */
+}
+
+[data-theme="story"] {
+  --bg: #faf7f2;
+  --secondaryBg: #f1e9dd;
+  --text: #2e2e2e;
+  --secondaryText: #4a4a4a;
+  --accent: #ff7f50; /* coral orange */
+  --secondaryAccent: #6c5b7b; /* muted purple */
+}
+
+[data-theme="retro"] {
+  --bg: #1e1e2f;
+  --secondaryBg: #2c2c3f;
+  --text: #f8f8f2;
+  --secondaryText: #bbbbbb;
+  --accent: #ff79c6; /* retro pink */
+  --secondaryAccent: #8be9fd; /* aqua blue */
+}
+
+[data-theme="experimental"] {
+  --bg: #121212;
+  --secondaryBg: #1e1e1e;
+  --text: #ececec;
+  --secondaryText: #bfbfbf;
+  --accent: #f72585; /* magenta */
+  --secondaryAccent: #4cc9f0; /* sky blue */
 }

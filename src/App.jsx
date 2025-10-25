@@ -1,12 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Outlet } from "react-router-dom";
+import ThemeNavBar from "./components/ThemeNavBar/ThemeNavBar";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+  const [isThemeVisible, setIsThemeVisible] = useState(false);
+
+  const toggleThemeNavBar = () => {
+    setIsThemeVisible(!isThemeVisible);
+  };
+
+  const handleSetTheme = (themeName) => {
+    setTheme(themeName);
+  };
+
+  useEffect(() => {
+    document.querySelector("body").setAttribute(`data-theme`, theme);
+  }, [theme]);
+
   return (
     <>
-      <Header />
+      <ThemeNavBar isVisible={isThemeVisible} setTheme={handleSetTheme} />
+      <Header toggleThemeNavBar={toggleThemeNavBar} />
       <main>
         <Outlet />
       </main>

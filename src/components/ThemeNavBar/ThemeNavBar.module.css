@@ -1,0 +1,87 @@
+@import "../../styles/variables.css";
+.sidebar {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--secondaryBg);
+  transition: height 0.5s ease;
+}
+
+.sidebar.visible {
+  height: 10em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.077);
+}
+
+.sidebar h3 {
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2rem 1.5rem 0;
+}
+
+.themeList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+.themeBox {
+  padding: 1em;
+  background-color: var(--bg);
+  border-radius: 0.5em;
+  border: none;
+  max-width: 10%;
+  cursor: pointer;
+}
+
+.themeBox p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+}
+
+.themePalet {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  color: var(--text);
+}
+
+.colorBox {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 1em;
+}
+
+.colorBox + .colorBox {
+  margin-left: -0.75em;
+}
+
+.secondaryBg {
+  background-color: var(--secondaryBg);
+}
+
+.text {
+  background-color: var(--text);
+}
+
+.secondaryText {
+  background-color: var(--secondaryText);
+}
+
+.accent {
+  background-color: var(--accent);
+}
+
+.secondaryAccent {
+  background-color: var(--secondaryAccent);
+}

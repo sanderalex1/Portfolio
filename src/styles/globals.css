@@ -5,8 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-left: 3.5dvw;
-  padding-right: 3.5dvw;
 }
 
 body {
@@ -14,6 +12,28 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color var(--transition), color var(--transition);
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 3.5dvw;
+    padding-right: 3.5dvw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 a {
@@ -42,9 +62,4 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-}
-
-a {
-  text-decoration: none;
-  color: #373a3c;
 }

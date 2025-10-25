@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 function About() {
   return (
-    <>
+    <div className="container">
       <div className={styles.heroTitle}>
         <h2>About</h2>
         <h3>I'm Alex. A designer, maker and problem solver.</h3>
@@ -26,7 +26,7 @@ function About() {
           This is one of my favourite quotes (by Peter Drucker):
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
