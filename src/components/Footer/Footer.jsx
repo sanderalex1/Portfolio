@@ -1,4 +1,6 @@
 import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -23,11 +25,7 @@ function Footer() {
           </div>
           <div className={styles.sideImg}>
             <a href="#">
-              <img
-                className={styles.ghImg}
-                src="/Portfolio/github.png"
-                alt="GitHub"
-              />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </section>

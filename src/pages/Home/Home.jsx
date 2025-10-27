@@ -10,8 +10,8 @@ function Home() {
         </a>
         <h1 className="playfair">I make websites.</h1>
         <p className={`${styles.heroParagraph} roboto`}>
-          I’m a front-end developer and co-founder of Codista, a software studio
-          in Vienna. I also write about the web on my blog and elsewhere.
+          Each project — a lesson, a challenge, and a chance to turn ideas into
+          something real.
         </p>
       </div>
 

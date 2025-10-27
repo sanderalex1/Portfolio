@@ -1,5 +1,7 @@
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaintRoller } from "@fortawesome/free-solid-svg-icons";
 
 function Header({ toggleThemeNavBar }) {
   const navLinks = ["home", "about", "works"];
@@ -25,7 +27,7 @@ function Header({ toggleThemeNavBar }) {
               </NavLink>
             ))}
             <button className={styles.themeButton} onClick={toggleThemeNavBar}>
-              <img src="/Portfolio/paint.png" alt="Paint icon" />
+              <FontAwesomeIcon icon={faPaintRoller} />
             </button>
           </div>
         </nav>

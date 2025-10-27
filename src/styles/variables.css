@@ -2,13 +2,23 @@
   --transition: 0.5s ease;
 }
 
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
 [data-theme="light"] {
   --bg: #f8f9fa;
   --secondaryBg: #e2e2e2;
   --text: #1c1c1c;
   --secondaryText: #373a3c;
-  --accent: #2f80ed; /* blue accent */
-  --secondaryAccent: #ff6b6b; /* subtle contrast red/pink */
+  --accent: #2f80ed;
+  --secondaryAccent: #ff6b6b;
+}
+
+[data-theme="light"] ::selection {
+  background: var(--accent);
+  color: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -20,6 +30,11 @@
   --secondaryAccent: #00bfff; /* electric blue */
 }
 
+[data-theme="dark"] ::selection {
+  background: var(--accent);
+  color: #000000;
+}
+
 [data-theme="story"] {
   --bg: #faf7f2;
   --secondaryBg: #f1e9dd;
@@ -27,6 +42,11 @@
   --secondaryText: #4a4a4a;
   --accent: #ff7f50; /* coral orange */
   --secondaryAccent: #6c5b7b; /* muted purple */
+}
+
+[data-theme="story"] ::selection {
+  background: var(--accent); /* coral orange */
+  color: #ffffff; /* white text for readability */
 }
 
 [data-theme="retro"] {
@@ -38,6 +58,11 @@
   --secondaryAccent: #8be9fd; /* aqua blue */
 }
 
+[data-theme="retro"] ::selection {
+  background: var(--accent); /* retro pink */
+  color: #1e1e2f; /* dark background for contrast */
+}
+
 [data-theme="experimental"] {
   --bg: #121212;
   --secondaryBg: #1e1e1e;
@@ -45,4 +70,14 @@
   --secondaryText: #bfbfbf;
   --accent: #f72585; /* magenta */
   --secondaryAccent: #4cc9f0; /* sky blue */
+}
+
+[data-theme="experimental"] ::selection {
+  background: var(--accent); /* magenta */
+  color: #ffffff; /* white text */
+}
+
+[data-theme="dark"] ::selection,
+[data-theme="experimental"] ::selection {
+  text-shadow: 0 0 4px var(--secondaryAccent);
 }

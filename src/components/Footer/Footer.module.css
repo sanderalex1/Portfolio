@@ -28,9 +28,7 @@
 .sideImg {
   display: flex;
   margin-left: auto;
-}
-.sideImg img {
-  height: 5dvh;
+  font-size: 2.5em;
 }
 
 .footer p {

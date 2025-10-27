@@ -5,7 +5,9 @@ import { Outlet } from "react-router-dom";
 import ThemeNavBar from "./components/ThemeNavBar/ThemeNavBar";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
   const [isThemeVisible, setIsThemeVisible] = useState(false);
 
   const toggleThemeNavBar = () => {
@@ -14,6 +16,7 @@ function App() {
 
   const handleSetTheme = (themeName) => {
     setTheme(themeName);
+    localStorage.setItem("theme", themeName);
   };
 
   useEffect(() => {

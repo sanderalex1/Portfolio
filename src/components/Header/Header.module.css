@@ -70,6 +70,8 @@
   height: 4.5rem;
   border-radius: 50%;
   background-color: var(--bg);
+  color: var(--accent);
+  font-size: 1.2em;
   border: none;
   display: flex;
   justify-content: center;
@@ -80,13 +82,4 @@
 
 .themeButton:hover {
   background-color: var(--secondaryBg);
-}
-
-.navRight img {
-  border-radius: 50%; /* makes it circular */
-  width: 1.8rem;
-  height: 1.8rem; /* make height equal to width */
-  object-fit: cover; /* ensures the image fills the circle nicely */
-  margin: 0;
-  padding: 0;
 }
