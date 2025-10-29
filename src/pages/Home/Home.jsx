@@ -16,7 +16,7 @@ function Home() {
       </div>
 
       <section>
-        <h2 className="playfair" style={{ color: "#313234" }}>
+        <h2 className="playfair">
           Featured Works
         </h2>
         <PostList />

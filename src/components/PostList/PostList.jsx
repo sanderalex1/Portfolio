@@ -6,7 +6,9 @@ function PostList() {
   return (
     <div className={styles.sectionGrid}>
       {posts.map((p) => (
-        <PostCard key={p.id} post={p} />
+        <a href={p.link} target="blank">
+          <PostCard key={p.id} post={p} />
+        </a>
       ))}
     </div>
   );

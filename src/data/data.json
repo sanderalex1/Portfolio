@@ -1,50 +1,44 @@
 [
   {
     "id": 1,
-    "title": "Building a Better Portfolio",
-    "excerpt": "Thoughts on design systems and personal branding.",
-    "count": 61,
+    "title": "BookFinder",
+    "excerpt": "A simple app that lets you search for books and explore details about them. I built it to practice working with APIs and handling user input — and it turned out to be a really fun way to discover new reads along the way.",
     "image": "/Portfolio/BookFinder.png",
-    "link": "sanderalex1.github.io/BookFinder/"
+    "link": "https://sanderalex1.github.io/BookFinder/"
   },
   {
     "id": 2,
-    "title": "Tiny Tools, Big Impact",
-    "excerpt": "Why small side projects keep me sharp.",
-    "count": 24,
+    "title": "Memory Game",
+    "excerpt": "A classic matching game where you flip cards and try to find pairs. I made it to sharpen my React state management skills and add a little playful challenge to my coding practice.",
     "image": "/Portfolio/MemoryGame.png",
     "link": "https://sanderalex1.github.io/MemoryGame/"
   },
   {
     "id": 3,
-    "title": "Building a Better Portfolio",
-    "excerpt": "Thoughts on design systems and personal branding.",
-    "count": 61,
+    "title": "Menu React",
+    "excerpt": "A digital restaurant menu built with React. It started as an experiment in rendering dynamic content and filtering data, but it taught me a lot about structuring reusable components.",
     "image": "/Portfolio/BookFinder.png",
-    "link": "sanderalex1.github.io/BookFinder/"
+    "link": "https://sanderalex1.github.io/menuReact/"
   },
   {
     "id": 4,
-    "title": "Building a Better Portfolio",
-    "excerpt": "Thoughts on design systems and personal branding.",
-    "count": 61,
+    "title": "To-Do List React",
+    "excerpt": "A clean, simple to-do app focused on functionality and usability. It was one of my first full React projects — a great way to understand hooks, state updates, and making an interface that actually helps keep track of things.",
     "image": "/Portfolio/BookFinder.png",
-    "link": "sanderalex1.github.io/BookFinder/"
+    "link": "https://sanderalex1.github.io/toDoListReact/"
   },
   {
     "id": 5,
-    "title": "Building a Better Portfolio",
-    "excerpt": "Thoughts on design systems and personal branding.",
-    "count": 61,
+    "title": "Weather App",
+    "excerpt": "A weather dashboard that fetches live data from an API. It’s simple, but I enjoyed figuring out how to display real-time info in a clean, minimal interface — plus, it’s always nice to know if I need a jacket.",
     "image": "/Portfolio/BookFinder.png",
-    "link": "sanderalex1.github.io/BookFinder/"
+    "link": "https://sanderalex1.github.io/weatherApp/"
   },
   {
     "id": 6,
-    "title": "Building a Better Portfolio",
-    "excerpt": "Thoughts on design systems and personal branding.",
-    "count": 61,
+    "title": "Workout App",
+    "excerpt": "An app to log and track workouts. This one pushed me to think about data structure, user interaction, and creating something practical that could actually be useful day to day.",
     "image": "/Portfolio/BookFinder.png",
-    "link": "sanderalex1.github.io/BookFinder/"
+    "link": "https://sanderalex1.github.io/workOutApp/"
   }
 ]

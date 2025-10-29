@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintRoller } from "@fortawesome/free-solid-svg-icons";
 
 function Header({ toggleThemeNavBar }) {
-  const navLinks = ["home", "about", "works"];
+  const navLinks = ["home", "about"];
 
   return (
     <header className={styles.header}>

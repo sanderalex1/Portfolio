@@ -1,7 +1,5 @@
 .footer {
   border-top: 2px solid rgba(0, 0, 0, 0.077);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .leftSection {
@@ -33,5 +31,5 @@
 
 .footer p {
   font-weight: 600;
-  color: #313234;
+  color: var(--secondaryText);
 }

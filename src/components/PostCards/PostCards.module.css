@@ -1,18 +1,17 @@
 .art {
   position: relative;
-  width: 14dvw;
-  height: 35dvh;
-  border-radius: 25px;
-  background: #83c5be;
-  box-shadow: 20px 20px 60px #b3d7e1;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 10/12; /* keeps ratio instead of fixed vw/vh */
+  border-radius: 10px;
+  background: var(--secondaryBg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  padding: 0.5rem;
+  gap: 2rem;
   cursor: pointer;
-  color: white;
-  justify-content: space-between;
-  padding: 0.3dvw;
-  transition: transform 0.3s ease;
-  background-repeat: no-repeat;
+  transition: transform var(--transition), box-shadow var(--transition);
   background-size: cover;
   overflow: hidden;
 }
@@ -21,9 +20,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0); /* start transparent */
-  border-radius: 25px;
-  transition: background 0.3s ease;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  transition: background var(--transition);
   z-index: 0;
 }
 
@@ -33,23 +32,46 @@
 }
 
 .art:hover::before {
-  background: rgba(0, 0, 0, 0.4); /* adjust to desired darkness */
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.art h3 {
+  font-weight: 600;
+  color: white;
+  text-align: center;
 }
 
 .art p {
-  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  font-weight: 700;
+  transition: opacity var(--transition), transform var(--transition);
+  color: white;
 }
 
 .art:hover p {
-  visibility: visible;
-  transform: translate(0%, -50%);
-  transition: 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .art:hover small {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .art:hover {
   transform: scale(1.05);
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 480px) {
+  .art {
+    aspect-ratio: 10/12;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .art {
+    max-width: 100%;
+  }
 }

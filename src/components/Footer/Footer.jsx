@@ -19,10 +19,6 @@ function Footer() {
             <p>Social</p>
             <a href="#">LinkedIn</a>
           </div>
-          <div>
-            <p>Links</p>
-            <a href="#">twitter</a>
-          </div>
           <div className={styles.sideImg}>
             <a href="#">
               <FontAwesomeIcon icon={faGithub} />

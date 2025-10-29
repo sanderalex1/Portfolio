@@ -1,10 +1,46 @@
 .sectionGrid {
-  margin-top: 2rem;
   display: grid;
-  /* Use auto-fit or auto-fill for responsive columns */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2dvw;
-  /* Optional: spacing inside the section */
+  gap: clamp(2rem, 2vw, 2.5rem);
   padding: 1rem;
-  margin-bottom: 5rem;
+  margin: 2rem 0 5rem 0;
+}
+
+/* Grid item / card */
+.sectionGrid > * {
+  background-color: var(--secondaryBg);
+  color: var(--text);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sectionGrid a {
+  all: unset; /* Resets all inherited and applied styles */
+  display: inline; /* Restore default display for links */
+  cursor: pointer; /* Optional: make it behave like a link again */
+}
+
+@media (max-width: 480px) {
+  .sectionGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionGrid {
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionGrid {
+    gap: clamp(1.5rem, 2vw, 2rem);
+  }
 }

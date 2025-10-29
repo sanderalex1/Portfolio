@@ -7,77 +7,59 @@
   color: var(--bg);
 }
 
+/* --- LIGHT Theme --- */
 [data-theme="light"] {
-  --bg: #f8f9fa;
-  --secondaryBg: #e2e2e2;
-  --text: #1c1c1c;
-  --secondaryText: #373a3c;
-  --accent: #2f80ed;
-  --secondaryAccent: #ff6b6b;
+  --bg: #f8f9fa; 
+  --secondaryBg: #e9ecef;
+  --text: #212529; 
+  --secondaryText: #6c757d;
+  --accent: #007bff; 
+  --secondaryAccent: #ff6b6b; 
 }
 
-[data-theme="light"] ::selection {
-  background: var(--accent);
-  color: #ffffff;
-}
-
+/* --- DARK Theme --- */
 [data-theme="dark"] {
-  --bg: #0a0f0d;
-  --secondaryBg: #121212;
-  --text: #e0e0e0;
-  --secondaryText: #b3b3b3;
-  --accent: #00ffc6; /* neon mint */
-  --secondaryAccent: #00bfff; /* electric blue */
+  --bg: #121212; 
+  --secondaryBg: #1e1e1e; 
+  --text: #ffffff; 
+  --secondaryText: #a0a0a0; 
+  --accent: #00bcd4; 
+  --secondaryAccent: #ffeb3b; 
 }
 
-[data-theme="dark"] ::selection {
-  background: var(--accent);
-  color: #000000;
-}
-
+/* --- STORY Theme --- */
 [data-theme="story"] {
-  --bg: #faf7f2;
-  --secondaryBg: #f1e9dd;
-  --text: #2e2e2e;
-  --secondaryText: #4a4a4a;
-  --accent: #ff7f50; /* coral orange */
-  --secondaryAccent: #6c5b7b; /* muted purple */
+  --bg: #fdf6e3; 
+  --secondaryBg: #eee8d5; 
+  --text: #333333; 
+  --secondaryText: #4c5d63; 
+  --accent: #cb4b16; 
+  --secondaryAccent: #859900; 
 }
 
-[data-theme="story"] ::selection {
-  background: var(--accent); /* coral orange */
-  color: #ffffff; /* white text for readability */
-}
-
+/* --- RETRO Theme --- */
 [data-theme="retro"] {
-  --bg: #1e1e2f;
-  --secondaryBg: #2c2c3f;
-  --text: #f8f8f2;
-  --secondaryText: #bbbbbb;
-  --accent: #ff79c6; /* retro pink */
-  --secondaryAccent: #8be9fd; /* aqua blue */
+  --bg: #1a1a2e; 
+  --secondaryBg: #252a41; 
+  --text: #ffffff; 
+  --secondaryText: #b0b0b0; 
+  --accent: #ff00ff; 
+  --secondaryAccent: #00ffff; 
 }
 
-[data-theme="retro"] ::selection {
-  background: var(--accent); /* retro pink */
-  color: #1e1e2f; /* dark background for contrast */
-}
-
+/* --- EXPERIMENTAL Theme --- */
 [data-theme="experimental"] {
-  --bg: #121212;
-  --secondaryBg: #1e1e1e;
-  --text: #ececec;
-  --secondaryText: #bfbfbf;
-  --accent: #f72585; /* magenta */
-  --secondaryAccent: #4cc9f0; /* sky blue */
+  --bg: #000000; 
+  --secondaryBg: #111111; 
+  --text: #ffffff; 
+  --secondaryText: #a0a0a0;
+  --accent: #e91e63; 
+  --secondaryAccent: #03a9f4; 
 }
 
-[data-theme="experimental"] ::selection {
-  background: var(--accent); /* magenta */
-  color: #ffffff; /* white text */
-}
-
+[data-theme="light"] ::selection,
 [data-theme="dark"] ::selection,
+[data-theme="story"] ::selection,
+[data-theme="retro"] ::selection,
 [data-theme="experimental"] ::selection {
-  text-shadow: 0 0 4px var(--secondaryAccent);
 }
