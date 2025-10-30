@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -15,13 +16,12 @@ function Footer() {
             <p>Work</p>
             <a href="#">KodeHode</a>
           </div>
-          <div>
-            <p>Social</p>
-            <a href="#">LinkedIn</a>
-          </div>
           <div className={styles.sideImg}>
-            <a href="#">
+            <a href="https://github.com/sanderalex1" target="blank">
               <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://github.com/sanderalex1" target="blank">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
         </section>
