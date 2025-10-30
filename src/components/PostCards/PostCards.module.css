@@ -65,7 +65,6 @@
 
 @media (max-width: 480px) {
   .art {
-    aspect-ratio: 10/12;
     padding: 0.5rem;
   }
 }
