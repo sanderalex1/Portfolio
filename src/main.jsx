@@ -10,7 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/Portfolio",
+    path: "/Portfolio/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
